@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:background="@drawable/green_background"
+        android:fontFamily="serif"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/recycle_my_stuff"
+        android:textColor="#FD140101"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/scrollViewBackgroundColor">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="76dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/arrow" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/textViewDisplayMain"
+
+                    android:layout_marginTop="8dp"
+                    android:text="@string/recycle_my_stuff"
+                    android:textColor="#F7000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/imageDefault"
+
+                    android:text="@string/name"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/scrollViewBackgroundColor"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+
+                    style="@style/mainButton"
+
+                    android:background="@drawable/button_size"
+                    android:text="@string/uninstall"
+                    android:textColor="#6CA831" />
+
+                <Button
+                    android:id="@+id/button2"
+
+                    style="@style/mainButton"
+
+                    android:background="@color/buttonColor"
+                    android:text="@string/open"
+                    android:textColor="#F9F9F9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/scrollViewBackgroundColor"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/divider"
+                    style="@style/dividerDefault"
+                    android:layout_marginTop="16dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/description"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#E1EBD7">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="31dp"
+                    android:layout_height="29dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/whats_new_icon" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="19dp"
+                    android:text="@string/whats_new"
+                    android:textColor="@color/buttonColor"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="264dp"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/bullet_point_one"
+                    android:textColor="@color/buttonColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/bullet_point_two"
+                    android:textColor="@color/buttonColor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/bullet_point_three"
+                    android:textColor="@color/buttonColor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/scrollViewBackgroundColor"
+                android:gravity="center"
+                android:text="@string/read_more"
+                android:textAlignment="center"
+                android:textColor="@color/buttonColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/scrollViewBackgroundColor"
+                android:orientation="horizontal">
+                <!-- https://play.google.com/store/apps/details?id=mobi.inthepocket.fostplus.recyclage&hl=en_US -->
+                <ImageView
+                    android:id="@+id/imageView5"
+                    style="@style/imageDefault"
+
+                    app:srcCompat="@drawable/app_picture1" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    style="@style/imageDefault"
+
+                    app:srcCompat="@drawable/app_picture2" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    style="@style/imageDefault"
+
+                    app:srcCompat="@drawable/app_picture3" />
+            </LinearLayout>
+
+            <include layout="@layout/user_adapter" />
+
+            <include layout="@layout/user_adapter" />
+
+            <include layout="@layout/user_adapter" />
+
+            <include layout="@layout/user_adapter" />
+
+            <include layout="@layout/user_adapter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="@string/all_reviews"
+                    android:textAlignment="center"
+                    android:textColor="@color/buttonColor"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/divider2"
+                    style="@style/dividerDefault"
+
+                    android:background="?android:attr/listDivider"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/todo"
+                    android:paddingTop="16dp"
+                    app:srcCompat="?attr/actionModeShareDrawable" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="@string/share"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/backGroundColor">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    style="@style/imageDefault"
+
+                    android:layout_marginTop="16dp"
+                    android:text="@string/developer"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/todo"
+                    android:theme="@style/Theme.AppCompat"
+                    android:tint="@android:color/darker_gray"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:srcCompat="@android:drawable/ic_dialog_email" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    style="@style/imageDefault"
+
+                    android:layout_marginTop="20dp"
+                    android:text="@string/send_email"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView12"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="33dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/todo"
+                    android:tint="@android:color/darker_gray"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView12"
+                    app:srcCompat="@android:drawable/ic_secure" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    style="@style/imageDefault"
+
+                    android:layout_marginTop="22dp"
+                    android:text="@string/permissons_details"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView13"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <View
+                    android:id="@+id/divider3"
+                    style="@style/dividerDefault"
+
+                    android:layout_marginStart="16dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/todo"
+                    android:tint="@android:color/darker_gray"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider3"
+                    app:srcCompat="@android:drawable/ic_dialog_alert" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    style="@style/imageDefault"
+
+                    android:layout_marginTop="21dp"
+                    android:text="@string/flag"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView14"
+                    app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

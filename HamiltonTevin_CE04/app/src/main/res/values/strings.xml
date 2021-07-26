@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">HamiltonTevin_CE04</string>
+    <string name="recycle_my_stuff">  Recycle My Stuff</string>
+    <string name="todo">TODO</string>
+    <string name="name">Tevin Hamilton</string>
+    <string name="open">OPEN</string>
+    <string name="uninstall">UNINSTALL</string>
+    <string name="description">Get your plastic, cardboard, glass bottles and cans picked at your house by arranging pick up times and dates.</string>
+    <string name="whats_new">WHATS NEW</string>
+    <string name="bullet_point_one">• Set pick up date and time to pick up your items.</string>
+    <string name="bullet_point_two">• Earn points to gain rewards to your favor store.</string>
+    <string name="bullet_point_three">• Users can now decide to earn cash with points.</string>
+    <string name="read_more">READ MORE</string>
+    <string name="user_name">Ezio Auditore</string>
+    <string name="date">6/4/2019</string>
+    <string name="fair">Fair</string>
+    <string name="all_reviews">ALL REVIEWS</string>
+    <string name="share">Share</string>
+    <string name="review">I like the app and how it trys to get people to recycle but my main issue can we also have a option to donate our points to organiztions so we can save our planet.</string>
+    <string name="developer">Developer</string>
+    <string name="send_email">Send email</string>
+    <string name="permissons_details">Permissons details</string>
+    <string name="flag">Flag as inappropriate</string>
+
+</resources>
